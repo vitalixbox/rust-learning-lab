@@ -1,31 +1,26 @@
 # Rust Learning Lab
 
-A collection of small, independent Rust projects for practicing the language.
+A collection of code written while studying *Programming Rust*.
 
-## Projects
+## Layout
 
-- `hello` — a minimal “Hello, world!” program.
-- `projects/gcd` — finds the greatest common divisor of positive integers.
-- `projects/actix-gcd` — serves the GCD calculator as a web application.
-- `projects/mandelbrot` — renders the Mandelbrot set to a PNG image.
-- `projects/quickreplace` — performs regular-expression search and replace between files.
+- `programming-rust/exercises` contains small, chapter-focused examples.
+- `programming-rust/projects` contains complete programs from the book.
+- `programming-rust/hello` is the introductory Cargo project.
 
-Each project is its own Cargo package. Run commands from the project directory, or use `--manifest-path` from the repository root.
+Each directory with a `Cargo.toml` is an independent package.
 
-## Getting started
+## Usage
 
-Install a stable Rust toolchain, then clone the repository and try a project:
+Compile every package with [just](https://github.com/casey/just):
 
 ```sh
-cargo run --manifest-path hello/Cargo.toml
-cargo run --manifest-path projects/gcd/Cargo.toml -- 42 56
+just check
 ```
 
-Run tests and checks from the repository root:
+Run or test one package with Cargo:
 
 ```sh
-cargo test --manifest-path hello/Cargo.toml
-cargo test --manifest-path projects/gcd/Cargo.toml
-cargo clippy --manifest-path hello/Cargo.toml
-cargo clippy --manifest-path projects/gcd/Cargo.toml
+cargo run --manifest-path programming-rust/projects/gcd/Cargo.toml -- 42 56
+cargo test --manifest-path programming-rust/exercises/Cargo.toml
 ```
