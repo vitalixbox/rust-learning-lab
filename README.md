@@ -5,7 +5,10 @@ A collection of small, independent Rust projects for practicing the language.
 ## Projects
 
 - `hello` — a minimal “Hello, world!” program.
-- `gcd` — a command-line program that finds the greatest common divisor of a list of positive integers.
+- `projects/gcd` — finds the greatest common divisor of positive integers.
+- `projects/actix-gcd` — serves the GCD calculator as a web application.
+- `projects/mandelbrot` — renders the Mandelbrot set to a PNG image.
+- `projects/quickreplace` — performs regular-expression search and replace between files.
 
 Each project is its own Cargo package. Run commands from the project directory, or use `--manifest-path` from the repository root.
 
@@ -15,14 +18,14 @@ Install a stable Rust toolchain, then clone the repository and try a project:
 
 ```sh
 cargo run --manifest-path hello/Cargo.toml
-cargo run --manifest-path gcd/Cargo.toml -- 42 56
+cargo run --manifest-path projects/gcd/Cargo.toml -- 42 56
 ```
 
-Run all current tests and checks from the repository root:
+Run tests and checks from the repository root:
 
 ```sh
 cargo test --manifest-path hello/Cargo.toml
-cargo test --manifest-path gcd/Cargo.toml
+cargo test --manifest-path projects/gcd/Cargo.toml
 cargo clippy --manifest-path hello/Cargo.toml
-cargo clippy --manifest-path gcd/Cargo.toml
+cargo clippy --manifest-path projects/gcd/Cargo.toml
 ```
