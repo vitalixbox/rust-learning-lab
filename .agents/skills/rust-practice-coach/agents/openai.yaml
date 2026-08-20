@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rust Practice Coach"
+  short_description: "Coach small, idiomatic Rust practice projects"
+  default_prompt: "Use $rust-practice-coach to give me the next small Rust exercise and coach me without writing the implementation."
