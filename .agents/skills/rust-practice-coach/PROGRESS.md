@@ -11,12 +11,11 @@ Keep this file brief and evidence-based. Update it after meaningful milestones; 
 
 ## Current exercise
 
-- **Exercise:** A01 — Model a job lifecycle
-- **Path:** `practice/a01-job-lifecycle/`
-- **Started:** 2026-08-20
-- **Current step:** Rustacean review completed; reflection pending
-- **Open review item:** Strengthen the failure-path test to verify `finished_at` and carried state
-- **Next action belongs to:** Learner — answer the design-recall questions
+- **Exercise:** A02 — Reduce a mixed event stream
+- **Path:** `practice/a02-event-stream/`
+- **Started:** 2026-08-22
+- **Current step:** Step-by-step tutorial prepared; learner design pending
+- **Next action belongs to:** Learner — complete tutorial checkpoint 0
 
 ## Completed exercises
 
@@ -54,6 +53,7 @@ Promote a comment here only after it recurs or reveals a meaningful design habit
 
 | Priority | Topic | Why revisit | Candidate exercise/context |
 | --- | --- | --- | --- |
+| Low | Failure-path assertions | A01 failure test checks only the reason, not timestamps and carried state | Strengthen A01 test after A02 |
 
 ## More practice requested
 
@@ -63,3 +63,4 @@ Promote a comment here only after it recurs or reveals a meaningful design habit
 
 - Keep `programming-rust/` for book-derived exercises.
 - Put this curriculum's independent Cargo packages under `practice/<exercise-id>-<slug>/`.
+- A01 Rustacean review is complete; its active-recall reflection remains optional carryover while A02 proceeds.
