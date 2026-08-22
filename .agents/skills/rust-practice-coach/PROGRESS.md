@@ -11,12 +11,12 @@ Keep this file brief and evidence-based. Update it after meaningful milestones; 
 
 ## Current exercise
 
-- **Exercise:** None
-- **Path:** —
-- **Started:** —
-- **Current step:** —
-- **Open design question:** —
-- **Next action belongs to:** —
+- **Exercise:** A01 — Model a job lifecycle
+- **Path:** `practice/a01-job-lifecycle/`
+- **Started:** 2026-08-20
+- **Current step:** Rustacean review completed; reflection pending
+- **Open review item:** Strengthen the failure-path test to verify `finished_at` and carried state
+- **Next action belongs to:** Learner — answer the design-recall questions
 
 ## Completed exercises
 
@@ -34,6 +34,9 @@ Use `new`, `practiced`, or `comfortable`; record a concrete exercise or review o
 
 | Concept | Status | Evidence | Last practiced |
 | --- | --- | --- | --- |
+| Data-carrying enums | practiced | A01 models mutually exclusive lifecycle states with variant-specific data | 2026-08-22 |
+| Consuming transitions | practiced | A01 moves owned payloads between states without cloning | 2026-08-22 |
+| Ownership recovery on error | practiced | A01 returns the unchanged `Job` inside `RejectedTransition` | 2026-08-22 |
 
 ## Difficulties observed
 
